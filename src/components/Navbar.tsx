@@ -36,19 +36,21 @@ export default function Navbar() {
         >
           {site.name}
         </Link>
-        <div style={{ display: 'flex', gap: 24, alignItems: 'center' }}>
-          <a
-            href="/#work"
-            style={{ fontFamily: font.sans, fontSize: 15, color: c.textMuted, textDecoration: 'none' }}
-          >
-            Work
-          </a>
-          <a
-            href="/#about"
-            style={{ fontFamily: font.sans, fontSize: 15, color: c.textMuted, textDecoration: 'none' }}
-          >
-            About
-          </a>
+        <div style={{ display: 'flex', gap: 20, alignItems: 'center' }}>
+          <div className="hidden sm:flex" style={{ gap: 24, alignItems: 'center' }}>
+            <a
+              href="/#work"
+              style={{ fontFamily: font.sans, fontSize: 15, color: c.textMuted, textDecoration: 'none' }}
+            >
+              Work
+            </a>
+            <a
+              href="/#about"
+              style={{ fontFamily: font.sans, fontSize: 15, color: c.textMuted, textDecoration: 'none' }}
+            >
+              About
+            </a>
+          </div>
           <a
             href={`mailto:${site.email}`}
             style={{

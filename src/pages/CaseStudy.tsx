@@ -99,11 +99,12 @@ export default function CaseStudy() {
 
       {project.gallery.length > 0 && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: 20, margin: '40px 0' }}>
-          {project.gallery.map((src) => (
+          {project.gallery.map((src, i) => (
             <img
               key={src}
               src={src}
-              alt={project.title}
+              alt={`${project.title} — image ${i + 1}`}
+              loading="lazy"
               style={{ width: '100%', borderRadius: 12, border: `1px solid ${c.border}`, display: 'block' }}
             />
           ))}
