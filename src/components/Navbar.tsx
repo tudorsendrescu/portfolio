@@ -9,7 +9,7 @@ type NavLink = { to: string; label: string; children?: NavChild[] }
 
 const NAV: NavLink[] = [
   { to: '/', label: 'Home' },
-  { to: '/work', label: 'Work' },
+  { to: '/work', label: 'Portfolio' },
   {
     to: '/services',
     label: 'Services',
