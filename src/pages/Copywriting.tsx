@@ -33,7 +33,7 @@ export default function Copywriting() {
         },
       ]}
       approachTitle="How I approach it"
-      approach="Before I write a word, I ask a lot of questions — about your product, your customer, and what makes you different. Then I write to one person: sell on emotion, back it up with logic, and cut anything that doesn't earn its place. No filler, no clever-for-its-own-sake — just copy built to do a job."
+      approach="Before I write a word, I ask a lot of questions — about your product, your brand, and what makes you different. Then I write to one person: sell on emotion, back it up with logic, and cut anything that doesn't earn its place. No filler, no clever-for-its-own-sake — just copy built to do a job."
     />
   )
 }
