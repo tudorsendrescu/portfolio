@@ -29,6 +29,13 @@ html {
   zoom: 1.2;
 }
 
+/* On phones/tablets the 1.2 scale is too large, so drop back to normal size. */
+@media (max-width: 768px) {
+  #root {
+    zoom: 1;
+  }
+}
+
 a {
   color: inherit;
 }
