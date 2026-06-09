@@ -27,7 +27,7 @@ export default function CaseStudy() {
   return (
     <article style={{ maxWidth: 820, margin: '0 auto', padding: '120px 24px 96px' }}>
       <Link
-        to="/#work"
+        to="/work"
         style={{ display: 'inline-flex', alignItems: 'center', gap: 7, fontFamily: font.mono, fontSize: 14, color: c.textMuted, textDecoration: 'none', marginBottom: 32 }}
       >
         <ArrowLeft size={15} />
