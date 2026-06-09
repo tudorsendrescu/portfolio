@@ -6,5 +6,5 @@ export const site = {
     'Copywriter × developer for technical and SaaS products. I handle the words and the front end — one person, one cohesive piece.',
   email: 'sendrescutudor@gmail.com',
   github: 'https://github.com/tudorsendrescu',
-  linkedin: '', // add a URL to reveal the LinkedIn link
+  linkedin: '' as string, // add a URL to reveal the LinkedIn link
 } as const
