@@ -5,7 +5,7 @@ const STEPS = [
   {
     n: 1,
     title: 'You tell me the goal',
-    body: "What you're launching, who it's for, and what a win looks like. A short call or a few messages — no brief-writing or jargon required.",
+    body: "What you're launching, who it's for, and what a win looks like. Still figuring it out? Even better — we can talk through the offer, the audience, and what's getting in the way, and I'll give you my honest take before we commit to anything.",
   },
   {
     n: 2,

@@ -45,7 +45,8 @@ export default function Services() {
         }}
       >
         Mix and match. Hire me for just the copy, just the website, or the whole thing built as one
-        piece — you're never forced to take both.
+        piece — you're never forced to take both. And if you're not sure what you need, start with a
+        conversation: I'll give you my honest, outside read before you spend anything.
       </p>
       <div style={{ display: 'grid', gap: 20 }} className="grid-cols-1 md:grid-cols-2">
         {GROUPS.map(({ icon: Icon, title, blurb, items }) => (

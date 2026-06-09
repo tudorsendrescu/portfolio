@@ -41,8 +41,9 @@ export default function ContactCTA() {
           Let's work together.
         </h2>
         <p style={{ fontFamily: font.sans, fontSize: 18, lineHeight: 1.55, color: c.textBody, maxWidth: 540, margin: '16px auto 0' }}>
-          Tell me what you're building and who it's for. I'll send back an honest read on whether I'm
-          the right fit — and if I am, exactly how I'd approach it. No pitch, no obligation.
+          Tell me what you're building and who it's for — or just what's not working. I'll send back
+          an honest, no-pressure read on your situation, and if I can help, exactly how I'd approach
+          it. Even a quick second opinion is fair game.
         </p>
         <div style={{ marginTop: 32, display: 'flex', gap: 14, flexWrap: 'wrap', justifyContent: 'center' }}>
           <a

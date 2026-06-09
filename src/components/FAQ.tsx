@@ -3,6 +3,10 @@ import SectionHeading from './SectionHeading'
 
 const QA = [
   {
+    q: "I'm not sure what I actually need — can you help?",
+    a: "Absolutely. Tell me what you're selling and where it's stuck, and I'll give you my honest, objective read on the situation — what I'd do, what I wouldn't, and whether a project even makes sense yet. Think of it as a free second opinion, no strings attached.",
+  },
+  {
     q: "You're a student — can you actually deliver?",
     a: 'Yes. The work on this page is the proof: written and built end to end, to a professional standard. Judge me on the output, not the title.',
   },
