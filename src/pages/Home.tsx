@@ -1,82 +1,18 @@
 import Hero from '../components/Hero'
 import Section from '../components/Section'
 import Reveal from '../components/Reveal'
-import SectionHeading from '../components/SectionHeading'
-import SectionCTA from '../components/SectionCTA'
-import FloatingCTA from '../components/FloatingCTA'
-import ProjectGrid from '../components/ProjectGrid'
-import Services from '../components/Services'
 import WhyOnePerson from '../components/WhyOnePerson'
-import HowItWorks from '../components/HowItWorks'
-import WhoFor from '../components/WhoFor'
-import About from '../components/About'
-import FAQ from '../components/FAQ'
-import Testimonials from '../components/Testimonials'
-import ContactCTA from '../components/ContactCTA'
 
 export default function Home() {
   return (
     <>
       <Hero />
 
-      <Section id="work">
-        <Reveal>
-          <SectionHeading kicker="Selected work" title="Proof, not promises." />
-          <ProjectGrid />
-          <SectionCTA line="Like what you see?" label="Let's talk" />
-        </Reveal>
-      </Section>
-
-      <Section id="services" style={{ paddingTop: 0 }}>
-        <Reveal>
-          <Services />
-        </Reveal>
-      </Section>
-
       <Section style={{ paddingTop: 0 }}>
         <Reveal>
           <WhyOnePerson />
         </Reveal>
       </Section>
-
-      <Section style={{ paddingTop: 0 }}>
-        <Reveal>
-          <HowItWorks />
-          <SectionCTA line="Sound like what you need?" label="Start a conversation" />
-        </Reveal>
-      </Section>
-
-      <Section style={{ paddingTop: 0 }}>
-        <Reveal>
-          <WhoFor />
-        </Reveal>
-      </Section>
-
-      <Section id="about" style={{ paddingTop: 0 }}>
-        <Reveal>
-          <About />
-        </Reveal>
-      </Section>
-
-      <Section style={{ paddingTop: 0 }}>
-        <Reveal>
-          <FAQ />
-        </Reveal>
-      </Section>
-
-      <Section style={{ paddingTop: 0 }}>
-        <Reveal>
-          <Testimonials />
-        </Reveal>
-      </Section>
-
-      <Section id="contact" style={{ paddingTop: 0 }}>
-        <Reveal>
-          <ContactCTA />
-        </Reveal>
-      </Section>
-
-      <FloatingCTA />
     </>
   )
 }

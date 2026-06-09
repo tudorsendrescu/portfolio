@@ -1,8 +1,26 @@
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import { Menu, X } from 'lucide-react'
 import { c, font, SECTION_MAX } from '../theme'
 import { site } from '../data/site'
 
+const NAV = [
+  { to: '/', label: 'Home' },
+  { to: '/work', label: 'Work' },
+  { to: '/services', label: 'Services' },
+  { to: '/about', label: 'About' },
+  { to: '/faq', label: 'FAQ' },
+]
+
 export default function Navbar() {
+  const { pathname } = useLocation()
+  const [open, setOpen] = useState(false)
+
+  const colorFor = (to: string) => {
+    const active = to === '/' ? pathname === '/' : pathname.startsWith(to)
+    return active ? c.textPrimary : c.textMuted
+  }
+
   return (
     <header
       style={{
@@ -26,37 +44,22 @@ export default function Navbar() {
       >
         <Link
           to="/"
-          style={{
-            fontFamily: font.mono,
-            fontWeight: 600,
-            fontSize: 15,
-            color: c.textPrimary,
-            textDecoration: 'none',
-          }}
+          onClick={() => setOpen(false)}
+          style={{ fontFamily: font.mono, fontWeight: 600, fontSize: 15, color: c.textPrimary, textDecoration: 'none' }}
         >
           {site.name}
         </Link>
-        <div style={{ display: 'flex', gap: 20, alignItems: 'center' }}>
-          <div className="hidden sm:flex" style={{ gap: 24, alignItems: 'center' }}>
-            <a
-              href="/#work"
-              style={{ fontFamily: font.sans, fontSize: 15, color: c.textMuted, textDecoration: 'none' }}
+
+        <div className="hidden md:flex" style={{ gap: 24, alignItems: 'center' }}>
+          {NAV.map((n) => (
+            <Link
+              key={n.to}
+              to={n.to}
+              style={{ fontFamily: font.sans, fontSize: 15, color: colorFor(n.to), textDecoration: 'none', transition: 'color 150ms ease' }}
             >
-              Work
-            </a>
-            <a
-              href="/#services"
-              style={{ fontFamily: font.sans, fontSize: 15, color: c.textMuted, textDecoration: 'none' }}
-            >
-              Services
-            </a>
-            <a
-              href="/#about"
-              style={{ fontFamily: font.sans, fontSize: 15, color: c.textMuted, textDecoration: 'none' }}
-            >
-              About
-            </a>
-          </div>
+              {n.label}
+            </Link>
+          ))}
           <a
             href={`mailto:${site.email}`}
             style={{
@@ -73,7 +76,52 @@ export default function Navbar() {
             Get in touch
           </a>
         </div>
+
+        <button
+          onClick={() => setOpen((o) => !o)}
+          aria-label="Toggle menu"
+          className="flex md:hidden"
+          style={{ background: 'none', border: 'none', cursor: 'pointer', color: c.textPrimary, padding: 4 }}
+        >
+          {open ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </nav>
+
+      {open && (
+        <div
+          className="flex flex-col md:hidden"
+          style={{ borderTop: `1px solid ${c.borderSoft}`, padding: '12px 24px 20px', gap: 4 }}
+        >
+          {NAV.map((n) => (
+            <Link
+              key={n.to}
+              to={n.to}
+              onClick={() => setOpen(false)}
+              style={{ fontFamily: font.sans, fontSize: 16, color: colorFor(n.to), textDecoration: 'none', padding: '10px 0' }}
+            >
+              {n.label}
+            </Link>
+          ))}
+          <a
+            href={`mailto:${site.email}`}
+            onClick={() => setOpen(false)}
+            style={{
+              marginTop: 8,
+              fontFamily: font.sans,
+              fontWeight: 600,
+              fontSize: 16,
+              color: c.bg,
+              backgroundColor: c.accent,
+              padding: '12px 16px',
+              borderRadius: 6,
+              textDecoration: 'none',
+              textAlign: 'center',
+            }}
+          >
+            Get in touch
+          </a>
+        </div>
+      )}
     </header>
   )
 }

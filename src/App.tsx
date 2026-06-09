@@ -3,7 +3,15 @@ import { c } from './theme'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollManager from './components/ScrollManager'
+import Section from './components/Section'
+import Reveal from './components/Reveal'
+import ContactCTA from './components/ContactCTA'
+import FloatingCTA from './components/FloatingCTA'
 import Home from './pages/Home'
+import Work from './pages/Work'
+import ServicesPage from './pages/Services'
+import AboutPage from './pages/About'
+import FaqPage from './pages/Faq'
 import CaseStudy from './pages/CaseStudy'
 
 export default function App() {
@@ -14,10 +22,22 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/faq" element={<FaqPage />} />
           <Route path="/work/:slug" element={<CaseStudy />} />
         </Routes>
       </main>
+
+      <Section id="contact" style={{ paddingTop: 0 }}>
+        <Reveal>
+          <ContactCTA />
+        </Reveal>
+      </Section>
+
       <Footer />
+      <FloatingCTA />
     </div>
   )
 }
