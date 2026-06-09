@@ -3,7 +3,7 @@ export const site = {
   role: 'Copywriter & Developer',
   headline: 'I write the copy and build the page.',
   subheadline:
-    'A great landing page has two jobs: say the right thing, and load fast doing it. Most teams hire two people for that — and the message and the build never quite line up. I do both, so they do.',
+    'A copywriter who can also build. Hire me for the words — emails, ads, landing pages, scripts — for the website itself, or for both, built as one piece.',
   email: 'sendrescutudor@gmail.com',
   github: 'https://github.com/tudorsendrescu',
   linkedin: '' as string, // add a URL to reveal the LinkedIn link

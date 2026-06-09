@@ -5,8 +5,8 @@ import SectionHeading from '../components/SectionHeading'
 import SectionCTA from '../components/SectionCTA'
 import FloatingCTA from '../components/FloatingCTA'
 import ProjectGrid from '../components/ProjectGrid'
+import Services from '../components/Services'
 import WhyOnePerson from '../components/WhyOnePerson'
-import WhatIDo from '../components/WhatIDo'
 import HowItWorks from '../components/HowItWorks'
 import WhoFor from '../components/WhoFor'
 import About from '../components/About'
@@ -26,16 +26,15 @@ export default function Home() {
         </Reveal>
       </Section>
 
-      <Section style={{ paddingTop: 0 }}>
+      <Section id="services" style={{ paddingTop: 0 }}>
         <Reveal>
-          <WhyOnePerson />
+          <Services />
         </Reveal>
       </Section>
 
       <Section style={{ paddingTop: 0 }}>
         <Reveal>
-          <SectionHeading kicker="What I do" title="One person. The whole launch." />
-          <WhatIDo />
+          <WhyOnePerson />
         </Reveal>
       </Section>
 

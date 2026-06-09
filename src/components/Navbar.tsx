@@ -45,6 +45,12 @@ export default function Navbar() {
               Work
             </a>
             <a
+              href="/#services"
+              style={{ fontFamily: font.sans, fontSize: 15, color: c.textMuted, textDecoration: 'none' }}
+            >
+              Services
+            </a>
+            <a
               href="/#about"
               style={{ fontFamily: font.sans, fontSize: 15, color: c.textMuted, textDecoration: 'none' }}
             >
