@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import { c, font, SECTION_MAX } from '../theme'
 import { site } from '../data/site'
@@ -104,8 +105,8 @@ export default function Hero() {
         </p>
 
         <div style={{ marginTop: 36, display: 'flex', gap: 14, flexWrap: 'wrap', justifyContent: 'center' }}>
-          <a
-            href="#work"
+          <Link
+            to="/work"
             onMouseEnter={() => setPrimaryHover(true)}
             onMouseLeave={() => setPrimaryHover(false)}
             style={{
@@ -126,7 +127,7 @@ export default function Hero() {
           >
             See my work
             <ArrowRight size={18} />
-          </a>
+          </Link>
           <a
             href={site.github}
             target="_blank"

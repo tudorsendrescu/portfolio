@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { c, font } from '../theme'
-import portrait from '../assets/tudor-portrait.jpg'
+import storyPhoto from '../assets/tudor-story.jpg'
 
 export default function MyStory() {
   const [hover, setHover] = useState(false)
@@ -33,7 +33,7 @@ export default function MyStory() {
             maxWidth: 520,
           }}
         >
-          Fascinated by what makes people say yes.
+          It started with one question: why do people buy?
         </h2>
 
         <div style={{ fontFamily: font.sans, fontSize: 17, lineHeight: 1.7, color: c.textBody, marginTop: 24, maxWidth: 540 }}>
@@ -65,7 +65,7 @@ export default function MyStory() {
             fontSize: 16,
             color: hover ? c.accent : c.textPrimary,
             backgroundColor: 'transparent',
-            border: `1px solid ${hover ? c.accentBorder : c.borderHard}`,
+            border: `2px solid ${hover ? c.accent : c.borderHard}`,
             padding: '13px 28px',
             borderRadius: 6,
             textDecoration: 'none',
@@ -78,7 +78,7 @@ export default function MyStory() {
 
       <div style={{ flex: '1 1 300px', maxWidth: 400 }}>
         <img
-          src={portrait}
+          src={storyPhoto}
           alt="Sendrescu Tudor"
           style={{
             width: '100%',
