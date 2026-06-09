@@ -15,10 +15,10 @@ const imageFiles = import.meta.glob('./projects/*/*.{png,jpg,jpeg,webp,svg}', {
 
 function buildProject(path: string, raw: string): Project {
   const dir = path.replace(/\/index\.md$/, '')
-  const slug = dir.split('/').pop() as string
+  const slug = dir.split('/').pop()!
   const resolveImage = (rel: string) => {
     const key = rel.replace(/^\.\//, `${dir}/`)
-    return imageFiles[key] ?? rel
+    return imageFiles[key] ?? ''
   }
   return parseProject(slug, raw, resolveImage)
 }

@@ -21,7 +21,7 @@ stack: [React, TypeScript]
 Body paragraph.
 `
 
-const resolve = (rel: string) => `/resolved${rel.replace('.', '')}`
+const resolve = (rel: string) => rel.replace(/^\.\//, '/resolved/')
 
 describe('parseProject', () => {
   it('parses scalar and array frontmatter fields', () => {
