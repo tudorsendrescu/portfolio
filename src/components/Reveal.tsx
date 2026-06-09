@@ -14,17 +14,14 @@ export default function Reveal({
   y?: number
 }) {
   const ref = useRef<HTMLDivElement>(null)
-  const [visible, setVisible] = useState(false)
+  // Start visible for reduced-motion users so no transition ever runs.
+  const [visible, setVisible] = useState(
+    () => window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+  )
 
   useEffect(() => {
     const el = ref.current
-    if (!el) return
-
-    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    if (reduce) {
-      setVisible(true)
-      return
-    }
+    if (!el || visible) return
 
     const observer = new IntersectionObserver(
       ([entry]) => {
