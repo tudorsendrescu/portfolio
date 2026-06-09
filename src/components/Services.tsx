@@ -24,7 +24,6 @@ const GROUPS = [
       'Landing pages',
       'Marketing & product sites',
       'Responsive front-end builds (React / TypeScript)',
-      'HTML email coding',
       'Speed & mobile optimization',
       'Deployment & hosting setup',
     ],
