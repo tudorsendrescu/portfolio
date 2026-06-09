@@ -2,7 +2,7 @@
 title: Lumina — Email Sequence
 tagline: A three-part welcome-and-convert email flow for a haircare brand.
 type: copywriting
-tags: [Email, Direct Response, Lifecycle, HTML]
+tags: [Email, Direct Response, Lifecycle, Design]
 cover: ./email-1.png
 gallery:
   - src: ./email-1.png
@@ -16,12 +16,12 @@ gallery:
     caption: "One focused call to action with a clear offer and the proof needed to buy — sent while interest is high."
 order: 2
 featured: true
-role: Strategy, copy, and hand-coded responsive HTML for all three emails.
+role: Strategy, copywriting, and design for all three emails.
 ---
 
 A three-email sequence for **Lumina**, a haircare brand, designed to take a new
-subscriber from first impression to first purchase. Each email is hand-coded as
-responsive HTML and built around a single job.
+subscriber from first impression to first purchase. Each email is designed and
+written around a single job.
 
 ## The strategy
 
@@ -37,5 +37,5 @@ The sequence follows a deliberate arc rather than three disconnected sends:
 ## The craft
 
 Each email leads with one idea, keeps the reader moving with short paragraphs and a
-single primary CTA, and is coded to render cleanly across email clients. The previews
+single primary CTA, and is designed to feel clean and effortless to read. The previews
 below show all three in sequence.
