@@ -9,7 +9,7 @@ export default function Navbar() {
         position: 'sticky',
         top: 0,
         zIndex: 50,
-        backgroundColor: 'rgba(8,11,15,0.72)',
+        backgroundColor: 'rgba(250,246,239,0.82)',
         backdropFilter: 'blur(10px)',
         borderBottom: `1px solid ${c.borderSoft}`,
       }}

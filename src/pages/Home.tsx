@@ -11,6 +11,7 @@ import HowItWorks from '../components/HowItWorks'
 import WhoFor from '../components/WhoFor'
 import About from '../components/About'
 import FAQ from '../components/FAQ'
+import Testimonials from '../components/Testimonials'
 import ContactCTA from '../components/ContactCTA'
 
 export default function Home() {
@@ -60,6 +61,12 @@ export default function Home() {
       <Section style={{ paddingTop: 0 }}>
         <Reveal>
           <FAQ />
+        </Reveal>
+      </Section>
+
+      <Section style={{ paddingTop: 0 }}>
+        <Reveal>
+          <Testimonials />
         </Reveal>
       </Section>
 

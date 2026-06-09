@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import { c } from './theme'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollManager from './components/ScrollManager'
@@ -7,7 +8,7 @@ import CaseStudy from './pages/CaseStudy'
 
 export default function App() {
   return (
-    <div style={{ backgroundColor: '#080B0F', minHeight: '100vh' }}>
+    <div style={{ backgroundColor: c.bg, minHeight: '100vh' }}>
       <ScrollManager />
       <Navbar />
       <main>

@@ -37,7 +37,7 @@ export default function CaseStudy() {
       <div style={{ fontFamily: font.mono, fontSize: 13, letterSpacing: '0.06em', textTransform: 'uppercase', color: c.accent, marginBottom: 14 }}>
         {project.tags.join(' · ')}
       </div>
-      <h1 style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 'clamp(34px, 5vw, 52px)', lineHeight: 1.1, letterSpacing: '-0.02em', color: c.textPrimary, margin: 0 }}>
+      <h1 style={{ fontFamily: font.serif, fontWeight: 600, fontSize: 'clamp(34px, 5vw, 52px)', lineHeight: 1.08, letterSpacing: '-0.01em', color: c.textPrimary, margin: 0 }}>
         {project.title}
       </h1>
       <p style={{ fontFamily: font.sans, fontSize: 20, lineHeight: 1.5, color: c.textBody, margin: '16px 0 0' }}>

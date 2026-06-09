@@ -24,7 +24,8 @@ export default function ProjectCard({ project }: { project: Project }) {
         border: `1px solid ${hover ? c.borderHard : c.border}`,
         borderRadius: 12,
         overflow: 'hidden',
-        transition: 'background-color 150ms ease, border-color 150ms ease, transform 150ms ease',
+        boxShadow: hover ? '0 16px 40px rgba(33,27,22,0.12)' : '0 1px 3px rgba(33,27,22,0.05)',
+        transition: 'background-color 150ms ease, border-color 150ms ease, transform 150ms ease, box-shadow 150ms ease',
         transform: hover ? 'translateY(-3px)' : 'translateY(0)',
       }}
     >

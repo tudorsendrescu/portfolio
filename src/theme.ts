@@ -1,36 +1,37 @@
 // Single source of truth for the site palette and type.
 export const c = {
-  bg: '#080B0F',
-  textPrimary: '#F0F2F5',
-  textBody: '#9AA5B4',
-  textMuted: '#6B7585',
-  textFaint: '#7A8898',
-  textLabel: '#A0AABB',
+  bg: '#FAF6EF',
+  textPrimary: '#211B16',
+  textBody: '#5C5249',
+  textMuted: '#8A7E72',
+  textFaint: '#A99E92',
+  textLabel: '#8A7E72',
 
-  accent: '#00E87D',
-  accentHover: '#00d472',
-  accentBg: 'rgba(0, 232, 125, 0.06)',
-  accentBgSoft: 'rgba(0, 232, 125, 0.04)',
-  accentBorder: 'rgba(0, 232, 125, 0.25)',
-  accentBorderSoft: 'rgba(0, 232, 125, 0.18)',
-  accentGlow: 'rgba(0, 232, 125, 0.35)',
-  accentIconBg: 'rgba(0, 232, 125, 0.12)',
+  accent: '#E8704F',
+  accentHover: '#D9603F',
+  accentBg: 'rgba(232, 112, 79, 0.08)',
+  accentBgSoft: 'rgba(232, 112, 79, 0.05)',
+  accentBorder: 'rgba(232, 112, 79, 0.30)',
+  accentBorderSoft: 'rgba(232, 112, 79, 0.20)',
+  accentGlow: 'rgba(232, 112, 79, 0.30)',
+  accentIconBg: 'rgba(232, 112, 79, 0.12)',
 
-  card: '#0E1217',
-  cardHover: '#111820',
-  surface: '#141A22',
-  codeBg: '#0A0E13',
+  card: '#FFFFFF',
+  cardHover: '#FFFDFB',
+  surface: '#F2ECE2',
+  codeBg: '#F4EEE5',
 
-  border: 'rgba(255, 255, 255, 0.07)',
-  borderSoft: 'rgba(255, 255, 255, 0.05)',
-  borderHard: 'rgba(255, 255, 255, 0.10)',
+  border: 'rgba(33, 27, 22, 0.10)',
+  borderSoft: 'rgba(33, 27, 22, 0.07)',
+  borderHard: 'rgba(33, 27, 22, 0.16)',
 
-  red: '#FF5F57',
+  red: '#D64545',
   purple: '#9B7FE8',
 } as const
 
 export const font = {
   sans: 'Inter, system-ui, sans-serif',
+  serif: '"Fraunces", Georgia, "Times New Roman", serif',
   mono: '"JetBrains Mono", ui-monospace, monospace',
 } as const
 

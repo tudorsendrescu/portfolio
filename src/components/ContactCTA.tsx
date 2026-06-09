@@ -24,15 +24,15 @@ export default function ContactCTA() {
         style={{
           position: 'absolute',
           inset: 0,
-          background: 'radial-gradient(ellipse at 50% 0%, rgba(0,232,125,0.08) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse at 50% 0%, rgba(232,112,79,0.10) 0%, transparent 70%)',
           pointerEvents: 'none',
         }}
       />
       <div style={{ position: 'relative' }}>
         <h2
           style={{
-            fontFamily: font.sans,
-            fontWeight: 700,
+            fontFamily: font.serif,
+            fontWeight: 600,
             fontSize: 'clamp(28px, 4vw, 40px)',
             color: c.textPrimary,
             margin: 0,

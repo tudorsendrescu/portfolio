@@ -7,8 +7,8 @@ const QA = [
     a: "Absolutely. Tell me what you're selling and where it's stuck, and I'll give you my honest, objective read on the situation — what I'd do, what I wouldn't, and whether a project even makes sense yet. Think of it as a free second opinion, no strings attached.",
   },
   {
-    q: "You're a student — can you actually deliver?",
-    a: 'Yes. The work on this page is the proof: written and built end to end, to a professional standard. Judge me on the output, not the title.',
+    q: 'How do I know you can deliver?',
+    a: "Look at the work on this page — written and built end to end, to a professional standard. I'd rather be judged on output than on a CV, and I'll tell you honestly up front if I'm not the right fit for what you need.",
   },
   {
     q: 'How long does it take?',

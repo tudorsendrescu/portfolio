@@ -26,7 +26,7 @@ export default function Hero() {
           position: 'absolute',
           inset: 0,
           backgroundImage:
-            'linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px)',
+            'linear-gradient(rgba(33,27,22,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(33,27,22,0.04) 1px, transparent 1px)',
           backgroundSize: '64px 64px',
           maskImage: 'radial-gradient(ellipse at 50% 0%, black 0%, transparent 75%)',
           WebkitMaskImage: 'radial-gradient(ellipse at 50% 0%, black 0%, transparent 75%)',
@@ -39,7 +39,7 @@ export default function Hero() {
         style={{
           position: 'absolute',
           inset: 0,
-          background: 'radial-gradient(ellipse at 50% 0%, rgba(0,232,125,0.10) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse at 50% 0%, rgba(232,112,79,0.12) 0%, transparent 70%)',
           pointerEvents: 'none',
         }}
       />
@@ -74,11 +74,11 @@ export default function Hero() {
 
         <h1
           style={{
-            fontFamily: font.sans,
-            fontWeight: 700,
-            fontSize: 'clamp(44px, 7vw, 84px)',
-            lineHeight: 1.07,
-            letterSpacing: '-0.02em',
+            fontFamily: font.serif,
+            fontWeight: 600,
+            fontSize: 'clamp(44px, 7vw, 82px)',
+            lineHeight: 1.05,
+            letterSpacing: '-0.01em',
             color: c.textPrimary,
             margin: '30px 0 0',
             maxWidth: 900,

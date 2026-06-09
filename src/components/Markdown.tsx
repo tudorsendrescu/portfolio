@@ -5,12 +5,12 @@ import { c, font } from '../theme'
 
 const components: Components = {
   h1: ({ children }) => (
-    <h1 style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 30, color: c.textPrimary, margin: '32px 0 12px', letterSpacing: '-0.01em' }}>
+    <h1 style={{ fontFamily: font.serif, fontWeight: 600, fontSize: 32, color: c.textPrimary, margin: '32px 0 12px', letterSpacing: '-0.01em' }}>
       {children}
     </h1>
   ),
   h2: ({ children }) => (
-    <h2 style={{ fontFamily: font.sans, fontWeight: 700, fontSize: 23, color: c.textPrimary, margin: '32px 0 12px' }}>
+    <h2 style={{ fontFamily: font.serif, fontWeight: 600, fontSize: 25, color: c.textPrimary, margin: '32px 0 12px' }}>
       {children}
     </h2>
   ),

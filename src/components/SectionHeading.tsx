@@ -17,8 +17,8 @@ export default function SectionHeading({ kicker, title }: { kicker: string; titl
       </div>
       <h2
         style={{
-          fontFamily: font.sans,
-          fontWeight: 700,
+          fontFamily: font.serif,
+          fontWeight: 600,
           fontSize: 'clamp(28px, 4vw, 40px)',
           letterSpacing: '-0.01em',
           color: c.textPrimary,
