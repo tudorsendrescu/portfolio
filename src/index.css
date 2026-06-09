@@ -40,3 +40,23 @@ a {
 .pulse-dot {
   animation: pulse-dot 1.6s ease-in-out infinite;
 }
+
+/* Contact form fields */
+.field {
+  width: 100%;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 15px;
+  color: #211b16;
+  background-color: #faf6ef;
+  border: 1px solid rgba(33, 27, 22, 0.16);
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+.field::placeholder {
+  color: #a99e92;
+}
+.field:focus {
+  outline: none;
+  border-color: #e8704f;
+  box-shadow: 0 0 0 3px rgba(232, 112, 79, 0.15);
+}

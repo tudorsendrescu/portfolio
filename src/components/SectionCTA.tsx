@@ -1,11 +1,12 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import { c, font } from '../theme'
 
 export default function SectionCTA({
   line,
   label = "Let's talk",
-  href = '#contact',
+  href = '/contact',
 }: {
   line: string
   label?: string
@@ -26,8 +27,8 @@ export default function SectionCTA({
       }}
     >
       <span style={{ fontFamily: font.sans, fontSize: 18, color: c.textBody }}>{line}</span>
-      <a
-        href={href}
+      <Link
+        to={href}
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
         style={{
@@ -48,7 +49,7 @@ export default function SectionCTA({
       >
         {label}
         <ArrowRight size={17} />
-      </a>
+      </Link>
     </div>
   )
 }

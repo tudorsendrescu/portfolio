@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import { c, font } from '../theme'
 
@@ -14,8 +15,8 @@ export default function FloatingCTA() {
   }, [])
 
   return (
-    <a
-      href="#contact"
+    <Link
+      to="/contact"
       aria-label="Work with me"
       style={{
         position: 'fixed',
@@ -33,7 +34,7 @@ export default function FloatingCTA() {
         padding: '12px 20px',
         borderRadius: 9999,
         textDecoration: 'none',
-        boxShadow: '0 8px 30px rgba(0,0,0,0.45)',
+        boxShadow: '0 10px 30px rgba(33,27,22,0.25)',
         opacity: shown ? 1 : 0,
         transform: shown ? 'translateY(0)' : 'translateY(20px)',
         pointerEvents: shown ? 'auto' : 'none',
@@ -42,6 +43,6 @@ export default function FloatingCTA() {
     >
       Work with me
       <ArrowRight size={16} />
-    </a>
+    </Link>
   )
 }

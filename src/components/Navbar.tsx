@@ -60,8 +60,8 @@ export default function Navbar() {
               {n.label}
             </Link>
           ))}
-          <a
-            href={`mailto:${site.email}`}
+          <Link
+            to="/contact"
             style={{
               fontFamily: font.sans,
               fontWeight: 600,
@@ -74,7 +74,7 @@ export default function Navbar() {
             }}
           >
             Get in touch
-          </a>
+          </Link>
         </div>
 
         <button
@@ -102,8 +102,8 @@ export default function Navbar() {
               {n.label}
             </Link>
           ))}
-          <a
-            href={`mailto:${site.email}`}
+          <Link
+            to="/contact"
             onClick={() => setOpen(false)}
             style={{
               marginTop: 8,
@@ -119,7 +119,7 @@ export default function Navbar() {
             }}
           >
             Get in touch
-          </a>
+          </Link>
         </div>
       )}
     </header>

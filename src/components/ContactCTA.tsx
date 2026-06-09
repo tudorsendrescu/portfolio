@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import { c, font } from '../theme'
 import { site } from '../data/site'
@@ -46,8 +47,8 @@ export default function ContactCTA() {
           it. Even a quick second opinion is fair game.
         </p>
         <div style={{ marginTop: 32, display: 'flex', gap: 14, flexWrap: 'wrap', justifyContent: 'center' }}>
-          <a
-            href={`mailto:${site.email}`}
+          <Link
+            to="/contact"
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
             style={{
@@ -66,8 +67,14 @@ export default function ContactCTA() {
               transition: 'box-shadow 150ms ease',
             }}
           >
-            {site.email}
+            Get in touch
             <ArrowRight size={18} />
+          </Link>
+        </div>
+        <div style={{ marginTop: 14, fontFamily: font.sans, fontSize: 14, color: c.textMuted }}>
+          Prefer email?{' '}
+          <a href={`mailto:${site.email}`} style={{ color: c.accent, textDecoration: 'none' }}>
+            {site.email}
           </a>
         </div>
         <div style={{ marginTop: 24, display: 'flex', gap: 18, justifyContent: 'center', alignItems: 'center' }}>

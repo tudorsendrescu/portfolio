@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import { c } from './theme'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -12,9 +12,13 @@ import Work from './pages/Work'
 import ServicesPage from './pages/Services'
 import AboutPage from './pages/About'
 import FaqPage from './pages/Faq'
+import Contact from './pages/Contact'
 import CaseStudy from './pages/CaseStudy'
 
 export default function App() {
+  const { pathname } = useLocation()
+  const onContact = pathname === '/contact'
+
   return (
     <div style={{ backgroundColor: c.bg, minHeight: '100vh' }}>
       <ScrollManager />
@@ -26,18 +30,21 @@ export default function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/faq" element={<FaqPage />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/work/:slug" element={<CaseStudy />} />
         </Routes>
       </main>
 
-      <Section id="contact" style={{ paddingTop: 0 }}>
-        <Reveal>
-          <ContactCTA />
-        </Reveal>
-      </Section>
+      {!onContact && (
+        <Section id="contact" style={{ paddingTop: 0 }}>
+          <Reveal>
+            <ContactCTA />
+          </Reveal>
+        </Section>
+      )}
 
       <Footer />
-      <FloatingCTA />
+      {!onContact && <FloatingCTA />}
     </div>
   )
 }
