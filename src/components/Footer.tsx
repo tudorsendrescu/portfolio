@@ -20,7 +20,7 @@ export default function Footer() {
         <span style={{ fontFamily: font.mono, fontSize: 14, color: c.textMuted }}>
           © {site.name}
         </span>
-        <div style={{ display: 'flex', gap: 18, alignItems: 'center' }}>
+        <div style={{ display: 'flex', gap: 18, alignItems: 'center', marginRight: 56 }}>
           <a href={`mailto:${site.email}`} aria-label="Email" style={{ color: c.textMuted, display: 'flex' }}>
             <Mail size={18} />
           </a>

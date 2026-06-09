@@ -8,10 +8,19 @@ export default function FloatingCTA() {
   const [shown, setShown] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setShown(window.scrollY > 600)
+    const onScroll = () => {
+      const pastHero = window.scrollY > 600
+      const nearBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 160
+      setShown(pastHero && !nearBottom)
+    }
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
+    window.addEventListener('resize', onScroll)
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
+    }
   }, [])
 
   return (
