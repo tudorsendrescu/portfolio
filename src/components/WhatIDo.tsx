@@ -4,18 +4,18 @@ import { c, font } from '../theme'
 const ITEMS = [
   {
     icon: PenLine,
-    title: 'Copywriting',
-    body: 'Direct-response and B2B SaaS copy that respects the reader. Clear structure, no fluff, built to convert.',
+    title: 'Copy that does one job: sell',
+    body: 'Direct-response writing built on a single line — problem, proof, action. No filler, no clever-for-its-own-sake. Every sentence earns the next one.',
   },
   {
     icon: Code2,
-    title: 'Front-end development',
-    body: 'Fast, responsive sites and landing pages in React and TypeScript — designed and shipped end to end.',
+    title: 'A page built around the words',
+    body: 'I build the site myself, in React — fast, responsive, and designed so the copy leads instead of fighting the layout. One person owns the result, start to finish.',
   },
   {
     icon: FlaskConical,
-    title: 'Technical copy',
-    body: 'An engineering background means I can read your product and write credibly for a technical audience.',
+    title: 'I actually speak technical',
+    body: "I'm an engineering student. I can read your product, understand what it really does, and write for technical buyers in a way they trust — instead of the vague hype that makes them click away.",
   },
 ]
 

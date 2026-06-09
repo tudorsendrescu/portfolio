@@ -40,8 +40,9 @@ export default function ContactCTA() {
         >
           Let's work together.
         </h2>
-        <p style={{ fontFamily: font.sans, fontSize: 18, lineHeight: 1.55, color: c.textBody, maxWidth: 520, margin: '16px auto 0' }}>
-          Have a product that needs the right words and a page that delivers them? Send me a note.
+        <p style={{ fontFamily: font.sans, fontSize: 18, lineHeight: 1.55, color: c.textBody, maxWidth: 540, margin: '16px auto 0' }}>
+          Tell me what you're building and who it's for. I'll send back an honest read on whether I'm
+          the right fit — and if I am, exactly how I'd approach it. No pitch, no obligation.
         </p>
         <div style={{ marginTop: 32, display: 'flex', gap: 14, flexWrap: 'wrap', justifyContent: 'center' }}>
           <a

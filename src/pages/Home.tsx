@@ -45,14 +45,14 @@ export default function Home() {
 
       <Section id="work">
         <Reveal>
-          <SectionHeading kicker="Selected work" title="Words and the pages that ship them." />
+          <SectionHeading kicker="Selected work" title="Proof, not promises." />
           <ProjectGrid />
         </Reveal>
       </Section>
 
       <Section style={{ paddingTop: 0 }}>
         <Reveal>
-          <SectionHeading kicker="What I do" title="Two skills, one cohesive deliverable." />
+          <SectionHeading kicker="What I do" title="One person. The whole launch." />
           <WhatIDo />
         </Reveal>
       </Section>

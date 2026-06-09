@@ -24,6 +24,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Scales the whole interface up slightly for easier reading. */
+#root {
+  zoom: 1.2;
+}
+
 a {
   color: inherit;
 }
