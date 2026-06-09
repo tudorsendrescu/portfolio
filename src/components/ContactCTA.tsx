@@ -12,14 +12,16 @@ export default function ContactCTA() {
   const [hover, setHover] = useState(false)
 
   return (
-    <div style={{ backgroundColor: c.textPrimary, borderRadius: 18, padding: '56px 32px', textAlign: 'center' }}>
-      <h2 style={{ fontFamily: font.serif, fontWeight: 600, fontSize: 'clamp(28px, 4vw, 40px)', color: cream, margin: 0 }}>
-        Let's work together.
+    <div style={{ backgroundColor: c.textPrimary, borderRadius: 18, padding: '64px 32px', textAlign: 'center' }}>
+      <div style={{ fontFamily: font.mono, fontSize: 13, letterSpacing: '0.08em', textTransform: 'uppercase', color: c.accent, marginBottom: 18 }}>
+        Take the first step
+      </div>
+      <h2 style={{ fontFamily: font.serif, fontWeight: 600, fontSize: 'clamp(28px, 4vw, 44px)', color: cream, margin: 0 }}>
+        Let's grow your business.
       </h2>
-      <p style={{ fontFamily: font.sans, fontSize: 18, lineHeight: 1.55, color: creamMuted, maxWidth: 540, margin: '16px auto 0' }}>
-        Tell me what you're building and who it's for — or just what's not working. I'll send back an
-        honest, no-pressure read on your situation, and if I can help, exactly how I'd approach it.
-        Even a quick second opinion is fair game.
+      <p style={{ fontFamily: font.sans, fontSize: 18, lineHeight: 1.55, color: creamMuted, maxWidth: 560, margin: '18px auto 0' }}>
+        Book a meeting or send a message — tell me what you're building, and I'll give you an honest
+        read on how to make it convert. No pitch, no obligation.
       </p>
       <div style={{ marginTop: 32, display: 'flex', gap: 14, flexWrap: 'wrap', justifyContent: 'center' }}>
         <Link
