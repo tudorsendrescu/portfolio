@@ -60,3 +60,11 @@ a {
   border-color: #e8704f;
   box-shadow: 0 0 0 3px rgba(232, 112, 79, 0.15);
 }
+
+/* Dropdown menu items */
+.menuitem {
+  transition: background-color 150ms ease;
+}
+.menuitem:hover {
+  background-color: rgba(232, 112, 79, 0.08);
+}

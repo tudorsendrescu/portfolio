@@ -13,6 +13,8 @@ import ServicesPage from './pages/Services'
 import AboutPage from './pages/About'
 import FaqPage from './pages/Faq'
 import Contact from './pages/Contact'
+import Copywriting from './pages/Copywriting'
+import Website from './pages/Website'
 import CaseStudy from './pages/CaseStudy'
 
 export default function App() {
@@ -28,6 +30,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/services/copywriting" element={<Copywriting />} />
+          <Route path="/services/web" element={<Website />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/contact" element={<Contact />} />
