@@ -10,6 +10,6 @@ export const site = {
 
   // --- Contact page settings (fill these in to switch features on) ---
   phone: '' as string, // optional public phone number; leave empty to hide the phone row
-  calendly: '' as string, // your Calendly event link (e.g. https://calendly.com/you/intro-call); empty hides the "Book a call" button
-  contactFormKey: '' as string, // Web3Forms access key — paste it to make the message form deliver to your inbox
+  calendly: 'https://calendly.com/sendrescutudor/intro-call' as string, // Calendly event link; empty hides the "Book a call" button
+  contactFormKey: '1d60ca89-4dcc-443e-be2c-86b1d2685733' as string, // Web3Forms access key — makes the message form deliver to your inbox
 } as const
