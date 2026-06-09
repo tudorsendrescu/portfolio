@@ -98,15 +98,30 @@ export default function CaseStudy() {
       <Markdown>{project.body}</Markdown>
 
       {project.gallery.length > 0 && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 20, margin: '40px 0' }}>
-          {project.gallery.map((src, i) => (
-            <img
-              key={src}
-              src={src}
-              alt={`${project.title} — image ${i + 1}`}
-              loading="lazy"
-              style={{ width: '100%', borderRadius: 12, border: `1px solid ${c.border}`, display: 'block' }}
-            />
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 36, margin: '40px 0' }}>
+          {project.gallery.map((item, i) => (
+            <figure key={item.src} style={{ margin: 0 }}>
+              <img
+                src={item.src}
+                alt={item.title ?? `${project.title} — image ${i + 1}`}
+                loading="lazy"
+                style={{ width: '100%', borderRadius: 12, border: `1px solid ${c.border}`, display: 'block' }}
+              />
+              {(item.title || item.caption) && (
+                <figcaption style={{ marginTop: 14, textAlign: 'center' }}>
+                  {item.title && (
+                    <div style={{ fontFamily: font.sans, fontWeight: 600, fontSize: 16, color: c.textPrimary }}>
+                      {item.title}
+                    </div>
+                  )}
+                  {item.caption && (
+                    <div style={{ fontFamily: font.sans, fontSize: 15, lineHeight: 1.55, color: c.textBody, maxWidth: 560, margin: '6px auto 0' }}>
+                      {item.caption}
+                    </div>
+                  )}
+                </figcaption>
+              )}
+            </figure>
           ))}
         </div>
       )}

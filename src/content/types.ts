@@ -5,6 +5,12 @@ export interface ProjectLinks {
   github?: string
 }
 
+export interface GalleryItem {
+  src: string
+  title?: string
+  caption?: string
+}
+
 export interface Project {
   slug: string
   title: string
@@ -12,7 +18,7 @@ export interface Project {
   type: ProjectType
   tags: string[]
   cover: string
-  gallery: string[]
+  gallery: GalleryItem[]
   links: ProjectLinks
   order: number
   featured: boolean

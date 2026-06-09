@@ -1,5 +1,5 @@
 import fm from 'front-matter'
-import type { Project, ProjectLinks, ProjectType } from './types'
+import type { GalleryItem, Project, ProjectLinks, ProjectType } from './types'
 
 interface RawAttrs {
   title?: string
@@ -7,7 +7,7 @@ interface RawAttrs {
   type?: ProjectType
   tags?: string[]
   cover?: string
-  gallery?: string[]
+  gallery?: Array<string | GalleryItem>
   links?: ProjectLinks
   order?: number
   featured?: boolean
@@ -30,7 +30,13 @@ export function parseProject(
     type: a.type ?? 'development',
     tags: Array.isArray(a.tags) ? a.tags.map(String) : [],
     cover: a.cover ? resolveImage(a.cover) : '',
-    gallery: Array.isArray(a.gallery) ? a.gallery.map(resolveImage) : [],
+    gallery: Array.isArray(a.gallery)
+      ? a.gallery.map((g) =>
+          typeof g === 'string'
+            ? { src: resolveImage(g) }
+            : { src: resolveImage(g.src), title: g.title, caption: g.caption },
+        )
+      : [],
     links: a.links ?? {},
     order: typeof a.order === 'number' ? a.order : 999,
     featured: a.featured === true,

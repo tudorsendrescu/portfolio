@@ -40,7 +40,21 @@ describe('parseProject', () => {
   it('resolves cover and gallery image paths through the resolver', () => {
     const p = parseProject('spinup', RAW, resolve)
     expect(p.cover).toBe('/resolved/cover.png')
-    expect(p.gallery).toEqual(['/resolved/a.png', '/resolved/b.png'])
+    expect(p.gallery).toEqual([{ src: '/resolved/a.png' }, { src: '/resolved/b.png' }])
+  })
+
+  it('supports gallery items with titles and captions', () => {
+    const raw = `---
+title: X
+type: copywriting
+gallery:
+  - src: ./one.png
+    title: First
+    caption: Does a thing
+---
+body`
+    const p = parseProject('x', raw, resolve)
+    expect(p.gallery).toEqual([{ src: '/resolved/one.png', title: 'First', caption: 'Does a thing' }])
   })
 
   it('keeps the markdown body without the frontmatter block', () => {

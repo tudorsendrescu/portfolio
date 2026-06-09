@@ -4,7 +4,16 @@ tagline: A three-part welcome-and-convert email flow for a haircare brand.
 type: copywriting
 tags: [Email, Direct Response, Lifecycle, HTML]
 cover: ./email-1.png
-gallery: [./email-1.png, ./email-2.png, ./email-3.png]
+gallery:
+  - src: ./email-1.png
+    title: "Email #1 — Welcome & first impression"
+    caption: "Introduces the brand and sets the tone. The job: earn trust and the next open — no hard sell yet."
+  - src: ./email-2.png
+    title: "Email #2 — Educate & build desire"
+    caption: "Names the reader's problem, makes it concrete, and frames the product as the considered solution."
+  - src: ./email-3.png
+    title: "Email #3 — Convert"
+    caption: "One focused call to action with a clear offer and the proof needed to buy — sent while interest is high."
 order: 2
 featured: true
 role: Strategy, copy, and hand-coded responsive HTML for all three emails.
