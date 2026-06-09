@@ -33,7 +33,7 @@ const GROUPS = [
 export default function Services() {
   return (
     <div>
-      <SectionHeading kicker="Services" title="The words, the website, or both." />
+      <SectionHeading kicker="What I offer" title="The words, the website, or both." />
       <p
         style={{
           maxWidth: 720,
