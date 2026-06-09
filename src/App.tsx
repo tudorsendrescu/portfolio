@@ -20,6 +20,7 @@ import CaseStudy from './pages/CaseStudy'
 export default function App() {
   const { pathname } = useLocation()
   const onContact = pathname === '/contact'
+  const hideBottomCTA = onContact || pathname === '/faq'
 
   return (
     <div style={{ backgroundColor: c.bg, minHeight: '100vh' }}>
@@ -39,7 +40,7 @@ export default function App() {
         </Routes>
       </main>
 
-      {!onContact && (
+      {!hideBottomCTA && (
         <Section id="contact" style={{ paddingTop: 0 }}>
           <Reveal>
             <ContactCTA />
